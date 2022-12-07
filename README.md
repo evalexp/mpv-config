@@ -56,6 +56,16 @@
 
 > Tips: 请注意，该插件会再启动一个MPV进程，会造成内存占用显著增高、CPU使用显著增高，日常使用不需要可不打开，如果机器性能足可以将该脚本从`manual_scripts`移动到`scripts`默认装载。
 
+### clipshot
+
+来自：https://github.com/ObserverOfTime/mpv-scripts
+
+具体文件列表：
+
+- `scripts/clipshot.lua`
+
+**State：默认装载**
+
 ## 快捷键说明
 
 下面以表格方式描述快捷键：
@@ -126,7 +136,8 @@
 | `ALT+SHIFT+l` | 逆时针旋转90° | `高级` > `工具` > `视频逆时针旋转90°` | |
 | `CTRL+j` | 清晰度-0.1 | `高级` > `工具` > `清晰度 -` | 不提供精细度调控，精细调控请使用控制台 |
 | `CTRL+k` | 清晰度+0.1 | `高级` > `工具` > `清晰度 +` | 不提供精细度调控，精细调控请使用控制台 |
-| `CTRL+s` | 截图保持到桌面 | `截屏` | 仅截图视频画面，不带OSC和OSD |
+| `CTRL+s` | 截图保存到桌面 | `截屏` > `截屏视频画面并保存桌面` | 仅截图视频画面，不带OSC和OSD |
+| `CTRL+SHIFT+S` | 截图复制到剪切板 | `截屏` > `截屏视频画面并复制到剪切板` | 仅截图视频画面，不带OSC和OSD |
 | `F11` | 加载插件 `Playlist Manager` | `外置脚本` > `播放列表管理器(Shift+Enter唤出)` | 请使用`Shift+Enter`唤出该管理器 |
 | `F12` | 加载插件 `Thumbfast`(用于进度条视频图片预览)
 | `ALT+w` | 退出程序，并保存播放状态 | `退出` | |
@@ -136,3 +147,9 @@
 | `鼠标侧前键`(亦叫前进键)或者`PageDown` | 播放列表下一个 | | |
 | `鼠标侧后键`(亦叫前进键)或者`PageUp` | 播放列表上一个 | | |
 | `滚轮`| 调节音量 | | |
+
+## 关于截屏
+
+如果以上截屏方案仍不能满足使用需求，请参考MPV命令：https://mpv.io/manual/master/#list-of-input-commands
+
+以及插件clipshot命令：`clipshot-subs`、`clipshot-video`、`clipshot-window`
