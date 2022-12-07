@@ -1,0 +1,7 @@
+# log file
+*.log
+
+# mpv output directory
+watch_later/
+
+log/
