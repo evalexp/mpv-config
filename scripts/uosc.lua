@@ -392,8 +392,11 @@ function update_margins()
 
 	state.margin_top = top
 	state.margin_bottom = bottom
-
-	utils.shared_script_property_set('osc-margins', string.format('%f,%f,%f,%f', 0, 0, top, bottom))
+	if mp.del_property then
+		mp.set_property_native("user-data/osc/osc-margins", string.format('%f,%f,%f,%f', 0, 0, top, bottom))
+	else
+		utils.shared_script_property_set('osc-margins', string.format('%f,%f,%f,%f', 0, 0, top, bottom))
+	end
 end
 function create_state_setter(name, callback)
 	return function(_, value)
